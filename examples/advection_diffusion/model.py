@@ -60,7 +60,7 @@ class Model:
 
 class DataModel(Model):
     def forward(self, u0, t0, t1, dt, term, context):
-        from gryphon import ESDIRK
+        from src.ESDIRK import ESDIRK
 
         u = Function(self.function_space)
         v = self.test_function
